@@ -1,8 +1,12 @@
 'use strict'
 
 describe('defenderWeaponTech', funtion() {
-  let defenderWeaponTech;
+  let defenderTechLevel;
   beforeEach(function() {
-    defenderWeaponTech = new DefenderWeaponTech();
+    defenderTechLevel = new DefenderTechLevel();
   })
 })
+
+it('starts at level 1', function() {
+  expect(defenderTechLevel.getCurrentLevel()).toEqual(1);
+});
