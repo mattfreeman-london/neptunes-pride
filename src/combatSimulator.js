@@ -22,4 +22,8 @@ levelDown() {
   this.level -= 1
 };
 
+isMinimumLevel() {
+  return this.level === this.MINIMUM_LEVEL;
+};
+
 }

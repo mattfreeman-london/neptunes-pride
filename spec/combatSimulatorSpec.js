@@ -21,4 +21,9 @@ describe('defenderWeaponTech', function() {
     expect(defenderTechLevel.getCurrentLevel()).toEqual(1);
   })
 
+  it('has a minimum level of 1', function() {
+    defenderTechLevel.levelDown();
+    expect(defenderTechLevel.getCurrentLevel()).toEqual(1);
+  })
+
 });
