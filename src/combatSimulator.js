@@ -11,4 +11,15 @@ getCurrentLevel() {
   return this.level;
 };
 
+levelUp() {
+  this.level += 1
+};
+
+levelDown() {
+  if (this.isMinimumLevel()) {
+    return;
+  }
+  this.level -= 1
+};
+
 }
