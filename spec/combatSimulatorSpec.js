@@ -9,3 +9,9 @@ describe ('attack', () => {
     expect(attack(2, 20)).toEqual(18)
   })
 })
+
+describe ('counter', () => {
+  it('increments the turn', () => {
+    expect(counter(1)).toEqual(2)
+  })
+})
