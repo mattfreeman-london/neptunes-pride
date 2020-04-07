@@ -1,55 +1,17 @@
 'use strict'
 
-class DefenderTechLevel {
-  constructor() {
-    this.MINIMUM_LEVEL = 1;
-    this.level = 1;
-  };
+let  = 1;
+let defenderShips = 10;
 
-getCurrentLevel() {
-  return this.level;
+let attackerWeaponTech = 1;
+let attackerShips = 10;
+
+defenderWeaponTech += 1;
+
+function defence(defenderWeaponTech, attackerShips) {
+  return (defenderWeaponTech - attackerShips);
 };
 
-levelUp() {
-  this.level += 1
+function attack(attackerWeaponTech, defenderShips) {
+  return (attackerWeaponTech - defenderShips);
 };
-
-levelDown() {
-  if (this.isMinimumLevel()) {
-    return;
-  }
-  this.level -= 1
-};
-
-isMinimumLevel() {
-  return this.level === this.MINIMUM_LEVEL;
-};
-
-}
-
-class AttackerTechLevel {
-  constructor() {
-    this.MINIMUM_LEVEL = 1;
-    this.level = 1;
-  };
-
-getCurrentLevel() {
-  return this.level;
-};
-
-levelUp() {
-  this.level += 1
-};
-
-levelDown() {
-  if (this.isMinimumLevel()) {
-    return;
-  }
-  this.level -= 1
-};
-
-isMinimumLevel() {
-  return this.level === this.MINIMUM_LEVEL;
-};
-
-}
