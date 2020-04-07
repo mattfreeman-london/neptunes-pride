@@ -1,17 +1,13 @@
-'use strict'
-
-let  = 1;
+let defenderWeaponTech = 1;
 let defenderShips = 10;
 
 let attackerWeaponTech = 1;
 let attackerShips = 10;
 
-defenderWeaponTech += 1;
-
 function defence(defenderWeaponTech, attackerShips) {
-  return (defenderWeaponTech - attackerShips);
+  return attackerShips - defenderWeaponTech;
 };
 
 function attack(attackerWeaponTech, defenderShips) {
-  return (attackerWeaponTech - defenderShips);
+  return (defenderShips - attackerWeaponTech);
 };
