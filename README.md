@@ -15,34 +15,3 @@ Starting with the defender, each player takes turns destroying enemy ships until
 Each player destroys a number of ships equal to their Weapons Technology each round.
 
 When players have more than one carrier in combat, damage is applied roughly evenly to each carrier involved.
-
-let defenderWeaponTech = 1;
-let defenderShips = 10;
-
-let attackerWeaponTech = 1;
-let attackerShips = 1;
-
-function defend(defenderWeaponTech, attackerShips) {
-  attackerShips = attackerShips - defenderWeaponTech;
-};
-
-function attack(attackerWeaponTech, defenderShips) {
-  defenderShips = (defenderShips - attackerWeaponTech);
-};
-
-function battle(defenderWeaponTech, defenderShips, attackerWeaponTech, attackerShips) {
-  while (defenderShips >= 1 || attackerShips >= 1) {
-    console.log(attackerShips)
-    defend(defenderWeaponTech, attackerShips)
-    console.log(attackerShips -1)
-    if (attackerShips <= 0) {
-      console.log(`Defender wins with #{defenderShips} left.`)
-      break;
-    };
-    attack(attackerWeaponTech, defenderShips);
-    if (defenderShips <=0) {
-      console.log(`Attacker wins with #{attackerShips} left.`)
-      break;
-    };
-  };
-};
